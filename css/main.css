@@ -1,0 +1,10 @@
+/* test */
+header {
+    margin: 40px;
+}
+
+header h1 a {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 600;
+}
