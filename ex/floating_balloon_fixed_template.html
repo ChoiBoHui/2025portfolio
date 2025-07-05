@@ -46,9 +46,9 @@
   </div>
 
   <script type="module">
-    import * as THREE from 'https://cdn.skypack.dev/three';
-    import { GLTFLoader } from 'https://cdn.skypack.dev/three/examples/jsm/loaders/GLTFLoader.js';
-    import * as CANNON from 'https://cdn.skypack.dev/cannon-es';
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js';
+    import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/loaders/GLTFLoader.js';
+    import * as CANNON from 'https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js';
 
     let scene, camera, renderer;
     let balloon, world, body;
@@ -77,6 +77,7 @@
       loader.load('balloon-fix.glb', (gltf) => {
         balloon = gltf.scene;
         balloon.scale.set(1.2, 1.2, 1.2);
+        balloon.position.set(0, 0, 0);
         scene.add(balloon);
 
         const shape = new CANNON.Sphere(0.8);
