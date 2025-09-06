@@ -1,12 +1,19 @@
-@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); */
+@import url('https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.3/xeicon.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 
 /* @font-face {
 	font-family: 'xeicon';
 	font-style: normal;
-	font-weight: 400;
 	src: url("../font/xeicon.ttf") format("truetype");
+	display: inline-block;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 } */
 
 @font-face {
@@ -23,6 +30,8 @@
 	src: url("../font/SB\ 어그로\ B.ttf") format("truetype");
 }
 
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -32,10 +41,21 @@
 	word-break: keep-all;
 }
 
-a,
-i {
+a {
 	color: inherit;
 	text-decoration: none;
+}
+
+i {
+	font-family: 'xeicon' !important;
+	font-style: normal !important;
+	display: inline-block;
+	/* speak: none; */
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 }
 
 ul,

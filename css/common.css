@@ -25,14 +25,8 @@ body {
     letter-spacing: -0.03em;
 }
 
-.ft_xe {
-    font-family: xeicon !important;
-    letter-spacing: -0.03em;
-}
 
-
-
-/* header Staret */
+/* header Start */
 header {
     /* position: fixed;
     top: 0; */
@@ -42,11 +36,13 @@ header {
     z-index: 2;
 }
 
-header.fix {
-    left: 0px;
+/* 네비 영역 */
+header nav {
+    display: flex;
+    align-items: center;
 }
 
-/* 로고영역 */
+/* 로고 영역 */
 header h1 a {
     display: inline-block;
     font-size: 26px;
@@ -57,101 +53,13 @@ header h1 a img {
     width: 117px;
 }
 
-/* 메뉴 영역 */
-/* header .nav { } */
-
-/* .nav .mainMenu { } */
-.nav .mainMenu div {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--color-lg);
+/* 탑메뉴 영역 */
+header .topmenu {
+    display: flex;
 }
 
-.nav .mainMenu div:hover {
-    color: var(--color-bl);
-}
+/* header End */
 
-.nav .mainMenu.view div {
-    position: relative;
-    color: var(--color-bl);
-}
-
-.nav .mainMenu.view div::after {
-    content: "*";
-    top: -7px;
-    right: -10px;
-    position: absolute;
-    display: inline-block;
-    font-family: montserrat;
-    font-size: 26px;
-    font-weight: 500;
-    color: var(--color-bl);
-}
-
-.nav .mainMenu.open div {
-    position: relative;
-    color: var(--color-bl);
-}
-
-
-/* 서브메뉴 영역 */
-.nav .subMenu {
-    position: absolute;
-    display: none;
-    top: 179px;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid var(--color-bl);
-    padding: 30px 30px 30px 40px;
-}
-
-.nav .subMenu.view {
-    display: block;
-}
-
-.nav .subMenu.open {
-    display: block;
-}
-
-.nav .subMenu .des {
-    font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 6px;
-    line-height: 18px;
-    color: var(--color-dg);
-}
-
-.nav .subMenu>ul>li~li {
-    margin-top: 3px;
-}
-
-.nav .subMenu a {
-    position: relative;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 300;
-    padding: 4px 8px 4px 0;
-    margin-bottom: 2px;
-}
-
-.nav .subMenu a.EN {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
-.nav .subMenu li.view a::after {
-    content: "*";
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    font-family: montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--color-bl);
-}
 
 /* footer Start */
 footer {
@@ -172,9 +80,7 @@ footer .topbutton {
     color: var(--color-07);
 }
 
-footer .topbutton ::before {
-    content: "\e944";
-}
+/* footer End */
 
 
 /* 테블릿 */
