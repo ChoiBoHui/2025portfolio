@@ -155,19 +155,19 @@ header h1 a img {
 
 /* footer Start */
 footer {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     padding: 40px 60px;
     border-top: 1px solid var(--color-04);
 }
 
+
 footer .copyright {
-    display: inline-block;
     font-size: 18px;
     color: var(--color-05);
 }
 
 footer .topbutton {
-    display: inline-block;
     font-size: 18px;
     color: var(--color-07);
 }
