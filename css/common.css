@@ -26,7 +26,7 @@ body {
 }
 
 .ft_xe {
-    font-family: xeicon;
+    font-family: xeicon !important;
     letter-spacing: -0.03em;
 }
 
@@ -170,6 +170,10 @@ footer .topbutton {
     display: inline-block;
     font-size: 18px;
     color: var(--color-07);
+}
+
+footer .topbutton ::before {
+    content: "\e944";
 }
 
 
