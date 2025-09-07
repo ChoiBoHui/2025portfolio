@@ -1,5 +1,47 @@
 $(function () {
 
+    // 메인메뉴 호버 이벤트
+    $('.topmenu a').hover(
+        function () {
+            $('.topmenu a').not(this).css('opacity', '60%')
+        },
+        function () {
+            $('.topmenu a').css('opacity', '100%')
+        }
+    );
+
+    // 메인메뉴 스크롤 이벤트
+
+    // 모바일 메뉴
+    $('.hamburger').on('click', function () {
+        $('.topmenu').toggleClass('open');
+    });
+
+
+    // 리사이즈시 클레스 제거
+    $(window).on('resize', function () {
+        $('.topmenu').removeClass('open');
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // 아래는 이전에 작업했던거 참고용!!
+
+
 
     // 메인메뉴 클릭 이벤트
     $('.nav .mainMenu').on('click', function () {
@@ -45,34 +87,5 @@ $(function () {
     });
 
 
-
-    // 헤라 파트별 설명부분 리스트 마우스호버시 이미지 노출
-    function sectionHeraHover() {
-        $('.hoverHeraSubmenu').hover(
-            function () {
-                $('.hera .heraHeader .submenuHover').fadeIn();
-            },
-            function () {
-                $('.hera .heraHeader .submenuHover').fadeOut();
-            }
-        );
-        $('.hoverHeraSearch').hover(
-            function () {
-                $('.hera .heraHeader .searchHover').fadeIn();
-            },
-            function () {
-                $('.hera .heraHeader .searchHover').fadeOut();
-            }
-        );
-        $('.hoverHeraSnsmodal').hover(
-            function () {
-                $('.hera .heraMain .snsmodalHover').fadeIn();
-            },
-            function () {
-                $('.hera .heraMain .snsmodalHover').fadeOut();
-            }
-        );
-    }
-    sectionHeraHover();
 
 });

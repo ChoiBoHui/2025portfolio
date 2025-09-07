@@ -1,6 +1,6 @@
 html,
 body {
-    background-color: var(--color-01);
+    background-color: var(--color-00);
     color: var(--color-07);
 }
 
@@ -26,27 +26,44 @@ body {
 }
 
 
+.container {
+    padding: 0 60px;
+}
+
+
 /* header Start */
+.gnbWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
 header {
-    /* position: fixed;
-    top: 0; */
     display: flex;
+    align-items: center;
+    height: 92px;
     padding: 0 60px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
-    z-index: 2;
 }
 
 /* 네비 영역 */
 header nav {
     display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
 }
 
 /* 로고 영역 */
+header h1 {
+    transform: translateX(-10px);
+}
+
 header h1 a {
-    display: inline-block;
-    font-size: 26px;
-    font-weight: 600;
+    display: block;
+    padding: 10px;
 }
 
 header h1 a img {
@@ -56,6 +73,25 @@ header h1 a img {
 /* 탑메뉴 영역 */
 header .topmenu {
     display: flex;
+}
+
+header .topmenu>div:not(:first-child) {
+    margin-left: 48px;
+}
+
+header .topmenu a {
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* 모바일 메뉴 설정 */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
 }
 
 /* header End */
@@ -88,7 +124,23 @@ footer .topbutton {
 
 
 /* 모바일 */
-@media (max-width: 1880px) {
+@media (max-width: 1024px) {
+
+    /* 모바일 햄버거 메뉴 + topmenu */
+    .hamburger {
+        display: block;
+    }
+
+    header .topmenu {
+        display: none;
+    }
+
+    /* 리사이징될 때 .open 클레스 없어지게 */
+    header .topmenu.open {
+        display: block;
+    }
+
+
     /* html, body { overflow-x: hidden; width: 100%; } */
     /* header { left: -323px; } 
 header.fix { left: 0px; } */
