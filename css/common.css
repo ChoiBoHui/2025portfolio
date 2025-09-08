@@ -28,6 +28,7 @@ body {
 
 .container {
     padding: 0 60px;
+    margin: 0 auto;
 }
 
 
@@ -125,6 +126,10 @@ footer .topbutton {
 
 /* 모바일 */
 @media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
     header {
         display: flex;
         align-items: center;
@@ -147,10 +152,14 @@ footer .topbutton {
         display: none;
     }
 
-    /* 리사이징될 때 .open 클레스 없어지게 */
     header .topmenu.open {
         display: block;
     }
+
+
+
+
+
 
 
     /* html, body { overflow-x: hidden; width: 100%; } */
