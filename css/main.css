@@ -21,6 +21,8 @@ main .bg_video {
 .highlights .section_title {
     font-size: 68px;
     font-weight: 400;
+    margin-bottom: 60px;
+    /* 폰트 라인 맞춰서 간격 수정하다보니 66px이 맞지만 편의성 때문에 60px로 고정 */
 }
 
 .highlights .section_title .firstline {

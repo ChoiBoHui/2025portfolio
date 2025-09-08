@@ -125,6 +125,18 @@ footer .topbutton {
 
 /* 모바일 */
 @media (max-width: 1024px) {
+    header {
+        display: flex;
+        align-items: center;
+        height: 92px;
+        padding: 0 20px;
+        background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+    }
+
+    /* 로고 영역 */
+    header h1 a img {
+        width: 110px;
+    }
 
     /* 모바일 햄버거 메뉴 + topmenu */
     .hamburger {
