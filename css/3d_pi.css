@@ -57,7 +57,6 @@
     font-weight: 500;
 }
 
-/* 첫째 제외 선택자 */
 .main_visual .tool_program>div:not(:first-child)::before {
     content: "";
     display: inline-block;
@@ -80,6 +79,160 @@
     margin-bottom: 10px;
 }
 
+/* 본문 시작 */
+
+/* text_box Start */
+/* .text_box{} */
+
+.text_box .detail_box {
+    padding: 0 60px;
+}
+
+.text_box .detail_box .inner {
+    max-width: 1240px;
+    margin: 120px auto;
+}
+
+.text_box .detail_box .detail_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-05);
+    margin-bottom: 40px;
+}
+
+.text_box .detail_box .detail_text p {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 54px;
+    color: var(--color-07);
+    margin-bottom: 60px;
+}
+
+.text_box .detail_box .detail_text span {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-06);
+}
+
+
+/* solution_box Start */
+.solution_box {
+    padding: 0 60px;
+    background-color: #F6F6F6;
+}
+
+.solution_box .solution:not(:first-child) {
+    border-top: solid 1px var(--color-03);
+}
+
+.solution_box .sol {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.solution_box .solution .img_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-06);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* 키 워드 생략 */
+
+/* 스토리보드 시작 */
+.solution_box .sol.sb .board {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 40px;
+}
+
+.solution_box .sol.sb .board:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+
+.solution_box .sol.sb .board img {
+    width: 730px;
+    max-width: 100%;
+    /* height: auto; */
+}
+
+.solution_box .sol.sb .board .sb_des {
+    flex: 1;
+    display: flex;
+    border-top: solid 1px var(--color-06);
+    border-bottom: solid 1px var(--color-06);
+    align-items: center;
+}
+
+.solution_box .sol.sb .sb_des .des_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--color-06);
+}
+
+.solution_box .sol.sb .sb_des .des_text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-05);
+    line-height: 28px;
+}
+
+
+/* 비디오 시작 */
+.solution .sol.vv .view_video {
+    position: relative;
+}
+
+.solution .sol.vv .view_video video {
+    width: 1240px;
+    max-width: 100%;
+    display: block;
+}
+
+.solution .sol.vv .view_video .ppbtn {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* 안 보일 땐 클릭 방지 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.solution .sol.vv .view_video:hover .ppbtn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.solution .sol.vv .view_video.paused .ppbtn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -90,7 +243,7 @@
 
 
 /* 테블릿 */
-/* @media (max-width: 1200px) {} */
+/* @media (max-width: 1240px) {} */
 
 
 /* 모바일 */

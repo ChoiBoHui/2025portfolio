@@ -68,11 +68,11 @@ header h1 a img {
 }
 
 /* 탑메뉴 영역 */
-header .topmenu {
+header .topmenu .inner {
     display: flex;
 }
 
-header .topmenu>div:not(:first-child) {
+header .topmenu .submenu:not(:first-child) {
     margin-left: 28px;
 }
 
@@ -89,6 +89,19 @@ header .topmenu a {
     display: none;
     cursor: pointer;
     padding: 10px;
+}
+
+.topmenu .closeBtn {
+    position: fixed;
+    top: 24px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.topmenu.open .closeBtn {
+    display: block;
 }
 
 /* header End */
@@ -145,16 +158,49 @@ footer .topbutton i {
         width: 110px;
     }
 
-    /* 모바일 햄버거 메뉴 + topmenu */
-    .hamburger {
-        display: block;
-    }
-
+    /* 탑메뉴 영역 */
     header .topmenu {
         display: none;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #E8E8ED;
     }
 
     header .topmenu.open {
+        display: block;
+    }
+
+    header .topmenu .inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        gap: 30px;
+    }
+
+    /* 모바일 메뉴 열렸을 경우, 스크롤 방지 */
+    body.noscroll {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    header .topmenu .submenu:not(:first-child) {
+        margin-left: 0;
+    }
+
+    header .topmenu a {
+        padding: 10px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    /* 모바일 햄버거 메뉴 + topmenu */
+    .hamburger {
         display: block;
     }
 

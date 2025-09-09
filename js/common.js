@@ -19,15 +19,27 @@ $(function () {
         }
     });
 
-    // 모바일 메뉴
+    // 모바일 메뉴 + 오픈시 스크롤 방지
     $('.hamburger').on('click', function () {
-        $('.topmenu').toggleClass('open');
+        $('.topmenu').addClass('open');
+
+        if ($('.topmenu').hasClass('open')) {
+            $('body').addClass('noscroll');
+        } else {
+            $('body').removeClass('noscroll');
+        }
     });
+
+    $('.closeBtn').on('click', function () {
+        $('.topmenu').removeClass('open');
+        $('body').removeClass('noscroll');
+    })
 
 
     // 리사이즈시 클레스 제거
     $(window).on('resize', function () {
         $('.topmenu').removeClass('open');
+        $('body').removeClass('noscroll');
     });
 
 

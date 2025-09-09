@@ -23,15 +23,27 @@ $(function () {
         }
     });
 
-    // 모바일 메뉴
+    // 모바일 메뉴 + 오픈시 스크롤 방지
     $('.hamburger').on('click', function () {
-        $('.topmenu').toggleClass('open');
+        $('.topmenu').addClass('open');
+
+        if ($('.topmenu').hasClass('open')) {
+            $('body').addClass('noscroll');
+        } else {
+            $('body').removeClass('noscroll');
+        }
     });
+
+    $('.closeBtn').on('click', function () {
+        $('.topmenu').removeClass('open');
+        $('body').removeClass('noscroll');
+    })
 
 
     // 리사이즈시 클레스 제거
     $(window).on('resize', function () {
         $('.topmenu').removeClass('open');
+        $('body').removeClass('noscroll');
     });
 
 
@@ -50,6 +62,46 @@ $(function () {
     $('.topbutton').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 500);
     });
+
+
+
+
+
+
+
+
+
+    // 3d_pi 퍼스널 아이덴티티 메인 비주얼 영상
+    const video = $('.pivideo').get(0);
+
+    // 영상 재생 시작 → 버튼은 pause 아이콘
+    $(video).on('play', function () {
+        $('.ppbtn>img').attr('src', './img/pauseBtn.svg');
+        $('.view_video').removeClass('paused');
+    });
+
+    // 영상 정지 → 버튼은 play 아이콘
+    $(video).on('pause ended', function () {
+        $('.ppbtn>img').attr('src', './img/playBtn.svg');
+        $('.view_video').addClass('paused');
+    });
+
+    // 영상 종료 → 처음으로 되돌리고, 버튼은 play 아이콘
+    $(video).on('ended', function () {
+        video.currentTime = 0;
+        // $('.ppbtn>img').attr('src', './img/playBtn.svg');
+        // $('.video-wrap').addClass('paused');
+    });
+
+    // 버튼 클릭 시 재생/정지 토글
+    $('.ppbtn').on('click', function () {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+
 
 
 

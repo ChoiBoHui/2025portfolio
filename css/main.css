@@ -110,7 +110,7 @@ main .bg_video {
 
 
 /* 테블릿 */
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
 
 
     .highlights .project .title_box .project_name {
