@@ -19,7 +19,7 @@ main .bg_video {
     margin-bottom: 160px;
 }
 
-.highlights .container {}
+/* .highlights .container {} */
 
 .highlights .section_title {
     font-size: 68px;
@@ -30,6 +30,11 @@ main .bg_video {
 
 .highlights .section_title .firstline {
     margin-bottom: 9px;
+}
+
+.highlights .section_title .secondline i {
+    width: 34px;
+    transform: translate(-7px, 7px);
 }
 
 /* 프로젝트 Start */
@@ -74,19 +79,96 @@ main .bg_video {
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-.sub_info {
+.highlights .project .title_box .project_name {
+    color: var(--color-00);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.highlights .project .title_box .sub_info {
     display: flex;
     gap: 10px;
+    font-size: 18px;
+    color: var(--color-02);
+    align-items: center;
 }
+
+.highlights .project .sub_info .tag {
+    font-weight: 500;
+    padding: 4px 8px;
+    background-color: var(--color-07);
+}
+
+
+
+
+
+
 
 /* main End */
 
 
+/* 테블릿 */
+@media (max-width: 1200px) {
 
 
+    .highlights .project .title_box .project_name {
+        color: var(--color-00);
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .highlights .project .title_box .sub_info {
+        font-size: 16px;
+    }
+
+
+}
+
+
+/* 모바일 */
 @media (max-width: 1024px) {
+    .highlights .section_title {
+        font-size: 48px;
+        font-weight: 400;
+        margin-bottom: 60px;
+    }
+
+    .highlights .section_title .firstline {
+        margin-bottom: 9px;
+    }
+
+    .highlights .section_title .secondline i {
+        width: 25px;
+        transform: translate(-7px, 7px);
+    }
+
     .highlights .project .item {
         flex: 1 1 100%;
     }
+
+
+
+
+    .highlights .project .title_box {
+        position: absolute;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 40px 20px 24px 20px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    .highlights .project .title_box .project_name {
+        color: var(--color-00);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+
 
 }

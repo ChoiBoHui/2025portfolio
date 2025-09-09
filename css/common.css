@@ -58,10 +58,6 @@ header nav {
 }
 
 /* 로고 영역 */
-header h1 {
-    transform: translateX(-10px);
-}
-
 header h1 a {
     display: block;
     padding: 10px;
@@ -77,11 +73,11 @@ header .topmenu {
 }
 
 header .topmenu>div:not(:first-child) {
-    margin-left: 48px;
+    margin-left: 28px;
 }
 
 header .topmenu a {
-    padding: 10px 0;
+    padding: 10px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -115,6 +111,11 @@ footer .copyright {
 footer .topbutton {
     font-size: 18px;
     color: var(--color-07);
+}
+
+footer .topbutton i {
+    margin-left: 4px;
+    transform: translateY(2px);
 }
 
 /* footer End */
@@ -157,7 +158,13 @@ footer .topbutton {
     }
 
 
-
+    /* footer Start */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 20px;
+        border-top: 1px solid var(--color-04);
+    }
 
 
 

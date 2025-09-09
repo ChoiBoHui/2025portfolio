@@ -24,8 +24,16 @@ $(function () {
     });
 
 
+    // 준비중 얼랏 창
+    $('.menu_bs').on('click', function (e) {
+        e.preventDefault();
+        alert('준비중 입니다.');
+    });
 
-
+    $('.menu_ex').on('click', function (e) {
+        e.preventDefault();
+        alert('준비중 입니다.');
+    });
 
 
 
