@@ -42,6 +42,10 @@ $(function () {
         alert('준비중 입니다.');
     });
 
+    // 탑 버튼
+    $('.topbutton').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 500);
+    });
 
 
 

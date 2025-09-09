@@ -120,6 +120,7 @@ footer .copyright {
 footer .topbutton {
     font-size: 18px;
     color: var(--color-07);
+    cursor: pointer;
 }
 
 footer .topbutton i {
