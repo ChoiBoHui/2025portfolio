@@ -11,6 +11,13 @@ $(function () {
     );
 
     // 메인메뉴 스크롤 이벤트
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 0) {
+            $('header').addClass('scroll');
+        } else {
+            $('header').removeClass('scroll');
+        }
+    });
 
     // 모바일 메뉴
     $('.hamburger').on('click', function () {
@@ -34,9 +41,6 @@ $(function () {
         e.preventDefault();
         alert('준비중 입니다.');
     });
-
-
-
 
 
 

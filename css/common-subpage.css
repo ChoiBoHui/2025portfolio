@@ -1,0 +1,193 @@
+html,
+body {
+    background-color: var(--color-00);
+    color: var(--color-07);
+}
+
+/* 빠른 참고, 레귤러 400, 미디움 500, 세미볼드 600, 볼드 700,  */
+
+/* 공통 */
+:root {
+    /* color 00=fff 08=000 */
+    --color-08: #000;
+    --color-07: #1d1d1f;
+    --color-06: #3A3A3B;
+    --color-05: #555556;
+    --color-04: #99999A;
+    --color-03: #CCCCCF;
+    --color-02: #E6E6E7;
+    --color-01: #EEEEF1;
+    --color-00: #fff;
+}
+
+.ft_aggro {
+    font-family: aggro;
+    letter-spacing: -0.03em;
+}
+
+
+.container {
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
+
+/* header Start */
+.gnbWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 92px;
+    padding: 0 60px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+header.scroll {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+}
+
+/* 네비 영역 */
+header nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 로고 영역 */
+header h1 a {
+    display: block;
+    padding: 10px;
+}
+
+header h1 a img {
+    width: 117px;
+}
+
+/* 탑메뉴 영역 */
+header .topmenu {
+    display: flex;
+    color: var(--color-00);
+}
+
+header.scroll .topmenu {
+    color: var(--color-07);
+}
+
+header .topmenu>div:not(:first-child) {
+    margin-left: 28px;
+}
+
+header .topmenu a {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* 모바일 메뉴 설정 */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* header End */
+
+
+/* footer Start */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    border-top: 1px solid var(--color-04);
+}
+
+
+footer .copyright {
+    font-size: 18px;
+    color: var(--color-05);
+}
+
+footer .topbutton {
+    font-size: 18px;
+    color: var(--color-07);
+}
+
+footer .topbutton i {
+    margin-left: 4px;
+    transform: translateY(2px);
+}
+
+/* footer End */
+
+
+/* 테블릿 */
+
+
+
+/* 모바일 */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        height: 92px;
+        padding: 0 20px;
+    }
+
+    /* 로고 영역 */
+    header h1 a img {
+        width: 110px;
+    }
+
+    /* 모바일 햄버거 메뉴 + topmenu */
+    .hamburger {
+        display: block;
+    }
+
+    header .topmenu {
+        display: none;
+    }
+
+    header .topmenu.open {
+        display: block;
+    }
+
+
+    /* footer Start */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 20px;
+        border-top: 1px solid var(--color-04);
+    }
+
+
+
+
+    /* html, body { overflow-x: hidden; width: 100%; } */
+    /* header { left: -323px; } 
+header.fix { left: 0px; } */
+    /* header .triggerArea { display: block; } */
+    /* .gnbWrap:hover header { left: 0px; } */
+
+    /* footer { left: -323px; } 
+footer.fix { left: 0px; } */
+    /* .gnbWrap:hover footer { left: 0px; } */
+
+
+    /* .main { position: relative; margin-left: 0px; padding: 0 40px 0 80px; } */
+    /* .main .container { margin: 0 auto; max-width: 1494px; } */
+}
