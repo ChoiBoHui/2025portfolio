@@ -49,9 +49,27 @@ $(function () {
         alert('준비중 입니다.');
     });
 
+    // $('.menu_ex').on('click', function (e) {
+    //     e.preventDefault();
+    //     alert('준비중 입니다.');
+    // });
+
+
+    // 경험 페이지 완료 전까지 임시 메뉴 스크롤
     $('.menu_ex').on('click', function (e) {
-        e.preventDefault();
-        alert('준비중 입니다.');
+        e.preventDefault(); // 기본 a 태그 이동 막기
+        const target = $($(this).attr('href')); // href 속성에서 id 가져오기
+
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 300); // 600ms 동안 스무스하게 이동
+        }
+
+        if ($(window).width() <= 1240) {
+            $('.topmenu').removeClass('open');
+            $('body').removeClass('noscroll'); // 스크롤 잠금 풀어주기 (있으면)
+        }
     });
 
     // 탑 버튼
@@ -67,52 +85,56 @@ $(function () {
 
 
 
+
+
+
+
     // 아래는 이전에 작업했던거 참고용!!
 
 
 
     // 메인메뉴 클릭 이벤트
-    $('.nav .mainMenu').on('click', function () {
-        let li = $(this).closest('li');
-        let subMenu = $(this).siblings('.subMenu');
+    // $('.nav .mainMenu').on('click', function () {
+    //     let li = $(this).closest('li');
+    //     let subMenu = $(this).siblings('.subMenu');
 
-        // mainMenu 적용
-        $(this).addClass('open');
-        li.siblings().find('.mainMenu').removeClass('open');
+    //     // mainMenu 적용
+    //     $(this).addClass('open');
+    //     li.siblings().find('.mainMenu').removeClass('open');
 
-        // subMenu 적용
-        subMenu.addClass('view');
-        li.siblings().find('.subMenu').removeClass('view');
-    });
+    //     // subMenu 적용
+    //     subMenu.addClass('view');
+    //     li.siblings().find('.subMenu').removeClass('view');
+    // });
 
-    // 서브메뉴 클릭 이벤트
-    $('.nav .subMenu .subMenuList li a').on('click', function () {
-        // let li = $(this).closest('li');
-        $('html, body').scrollTop(0);
+    // // 서브메뉴 클릭 이벤트
+    // $('.nav .subMenu .subMenuList li a').on('click', function () {
+    //     // let li = $(this).closest('li');
+    //     $('html, body').scrollTop(0);
 
-        $('.nav .subMenu .subMenuList li').removeClass('view');
-        $(this).closest('li').addClass('view');
-    });
+    //     $('.nav .subMenu .subMenuList li').removeClass('view');
+    //     $(this).closest('li').addClass('view');
+    // });
 
-    // 네비게이션 fix, 모바일 메뉴
-    $('.triggerBtn').on('click', function () {
-        $(this).toggleClass('fix');
-        $('header').toggleClass('fix');
-        $('footer').toggleClass('fix');
-        $('.mainMenu').removeClass('open');
-        $('.subMenu').removeClass('open');
+    // // 네비게이션 fix, 모바일 메뉴
+    // $('.triggerBtn').on('click', function () {
+    //     $(this).toggleClass('fix');
+    //     $('header').toggleClass('fix');
+    //     $('footer').toggleClass('fix');
+    //     $('.mainMenu').removeClass('open');
+    //     $('.subMenu').removeClass('open');
 
-        let mopen = $('.mopen')
-        if ($(this).hasClass('fix')) {
-            mopen.html("close");
-        } else (
-            mopen.html("menu")
-        );
+    //     let mopen = $('.mopen')
+    //     if ($(this).hasClass('fix')) {
+    //         mopen.html("close");
+    //     } else (
+    //         mopen.html("menu")
+    //     );
 
-        // 메뉴 닫을때 보이는 서브메뉴 복귀
-        $('.subMenu').removeClass('view');
-        $('.subMenuList li.view').closest('.subMenu').addClass('view');
-    });
+    //     // 메뉴 닫을때 보이는 서브메뉴 복귀
+    //     $('.subMenu').removeClass('view');
+    //     $('.subMenuList li.view').closest('.subMenu').addClass('view');
+    // });
 
 
 

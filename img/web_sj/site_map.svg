@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="905" viewBox="0 0 1200 905">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="0.067"/>
+      <stop offset="1" stop-color="#eeeef1"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_3080" data-name="그룹 3080" transform="translate(-360 -6575)">
+    <path id="합치기_1" data-name="합치기 1" d="M-6390,33.869h9.144l13.8,13.864V0h6.254V47.6l13.661-13.731H-6338L-6364,60Z" transform="translate(7325 6944)" fill="url(#linear-gradient)"/>
+    <g id="그룹_988" data-name="그룹 988" transform="translate(0 759)">
+      <rect id="사각형_506" data-name="사각형 506" width="1200" height="339" rx="12" transform="translate(360 5816)" fill="#0d0d0d"/>
+      <text id="As_Is" data-name="As Is" transform="translate(960 5863)" fill="#555556" font-size="18" font-family="Pretendard-SemiBold, Pretendard" font-weight="600" letter-spacing="-0.005em"><tspan x="-19.894" y="0">As Is</tspan></text>
+      <g id="그룹_985" data-name="그룹 985" transform="translate(0 28)" opacity="0.8">
+        <rect id="사각형_497" data-name="사각형 497" width="130" height="39" rx="4" transform="translate(595 5910)" fill="#1d1d1f"/>
+        <text id="시리즈A" transform="translate(660 5935)" fill="#e6e6e7" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-25.786" y="0">시리즈A</tspan></text>
+        <rect id="사각형_498" data-name="사각형 498" width="130" height="39" rx="4" transform="translate(595 5959)" fill="#1d1d1f"/>
+        <text id="시리즈B" transform="translate(660 5984)" fill="#e6e6e7" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-25.575" y="0">시리즈B</tspan></text>
+        <rect id="사각형_499" data-name="사각형 499" width="130" height="39" rx="4" transform="translate(595 6008)" fill="#1d1d1f"/>
+        <text id="시리즈C" transform="translate(660 6033)" fill="#e6e6e7" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-26.169" y="0">시리즈C</tspan></text>
+        <g id="그룹_975" data-name="그룹 975" transform="translate(0 7)">
+          <circle id="타원_4" data-name="타원 4" cx="2" cy="2" r="2" transform="translate(658 6052)" fill="#555556"/>
+          <circle id="타원_5" data-name="타원 5" cx="2" cy="2" r="2" transform="translate(658 6064)" fill="#555556"/>
+          <circle id="타원_6" data-name="타원 6" cx="2" cy="2" r="2" transform="translate(658 6076)" fill="#555556"/>
+        </g>
+        <g id="그룹_969" data-name="그룹 969" transform="translate(-74 56)">
+          <text id="카탈로그" transform="translate(884 5828)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-30.978" y="0">카탈로그</tspan></text>
+          <g id="사각형_494" data-name="사각형 494" transform="translate(819 5799)" fill="none" stroke="#555556" stroke-width="1">
+            <rect width="130" height="45" rx="4" stroke="none"/>
+            <rect x="0.5" y="0.5" width="129" height="44" rx="3.5" fill="none"/>
+          </g>
+        </g>
+        <g id="그룹_970" data-name="그룹 970" transform="translate(-72 56)">
+          <text id="제품소개" transform="translate(732 5828)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-30.978" y="0">제품소개</tspan></text>
+          <g id="사각형_492" data-name="사각형 492" transform="translate(667 5799)" fill="none" stroke="#555556" stroke-width="1">
+            <rect width="130" height="45" rx="4" stroke="none"/>
+            <rect x="0.5" y="0.5" width="129" height="44" rx="3.5" fill="none"/>
+          </g>
+        </g>
+        <g id="그룹_968" data-name="그룹 968" transform="translate(-77 56)">
+          <text id="파트너사" transform="translate(1037 5828)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-30.978" y="0">파트너사</tspan></text>
+          <g id="사각형_493" data-name="사각형 493" transform="translate(972 5799)" fill="none" stroke="#555556" stroke-width="1">
+            <rect width="130" height="45" rx="4" stroke="none"/>
+            <rect x="0.5" y="0.5" width="129" height="44" rx="3.5" fill="none"/>
+          </g>
+        </g>
+        <g id="그룹_967" data-name="그룹 967" transform="translate(-80 56)">
+          <text id="커뮤니티" transform="translate(1190 5828)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-30.978" y="0">커뮤니티</tspan></text>
+          <g id="사각형_495" data-name="사각형 495" transform="translate(1125 5799)" fill="none" stroke="#555556" stroke-width="1">
+            <rect width="130" height="45" rx="4" stroke="none"/>
+            <rect x="0.5" y="0.5" width="129" height="44" rx="3.5" fill="none"/>
+          </g>
+        </g>
+        <g id="그룹_966" data-name="그룹 966" transform="translate(-82 56)">
+          <text id="문의하기" transform="translate(1342 5828)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-30.978" y="0">문의하기</tspan></text>
+          <g id="사각형_496" data-name="사각형 496" transform="translate(1277 5799)" fill="none" stroke="#555556" stroke-width="1">
+            <rect width="130" height="45" rx="4" stroke="none"/>
+            <rect x="0.5" y="0.5" width="129" height="44" rx="3.5" fill="none"/>
+          </g>
+        </g>
+        <g id="그룹_965" data-name="그룹 965" transform="translate(-85 56)">
+          <text id="오시는_길" data-name="오시는 길" transform="translate(1495 5828)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-33.131" y="0">오시는 길</tspan></text>
+          <g id="사각형_491" data-name="사각형 491" transform="translate(1430 5799)" fill="none" stroke="#555556" stroke-width="1">
+            <rect width="130" height="45" rx="4" stroke="none"/>
+            <rect x="0.5" y="0.5" width="129" height="44" rx="3.5" fill="none"/>
+          </g>
+        </g>
+        <g id="그룹_971" data-name="그룹 971" transform="translate(-69 56)">
+          <g id="사각형_487" data-name="사각형 487" transform="translate(514 5799)" fill="none" stroke="#555556" stroke-width="1">
+            <rect width="130" height="45" rx="4" stroke="none"/>
+            <rect x="0.5" y="0.5" width="129" height="44" rx="3.5" fill="none"/>
+          </g>
+          <text id="회사소개" transform="translate(579 5828)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-30.978" y="0">회사소개</tspan></text>
+        </g>
+        <rect id="사각형_488" data-name="사각형 488" width="130" height="39" rx="4" transform="translate(445 5910)" fill="#1d1d1f"/>
+        <text id="회사소개-2" data-name="회사소개" transform="translate(510 5935)" fill="#e6e6e7" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-27.536" y="0">회사소개</tspan></text>
+        <rect id="사각형_489" data-name="사각형 489" width="130" height="39" rx="4" transform="translate(445 5959)" fill="#1d1d1f"/>
+        <text id="연혁" transform="translate(510 5984)" fill="#e6e6e7" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-13.788" y="0">연혁</tspan></text>
+        <rect id="사각형_490" data-name="사각형 490" width="130" height="39" rx="4" transform="translate(445 6008)" fill="#1d1d1f"/>
+        <text id="인증_및_특허" data-name="인증 및 특허" transform="translate(510 6033)" fill="#e6e6e7" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-38.346" y="0">인증 및 특허</tspan></text>
+        <rect id="사각형_501" data-name="사각형 501" width="130" height="39" rx="4" transform="translate(1045 5959)" fill="#1d1d1f"/>
+        <text id="회사뉴스" transform="translate(1110 5984)" fill="#e6e6e7" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-27.536" y="0">회사뉴스</tspan></text>
+        <rect id="사각형_500" data-name="사각형 500" width="130" height="39" rx="4" transform="translate(1045 5910)" fill="#1d1d1f"/>
+        <text id="공지사항" transform="translate(1110 5935)" fill="#e6e6e7" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-27.536" y="0">공지사항</tspan></text>
+      </g>
+    </g>
+    <g id="그룹_987" data-name="그룹 987" transform="translate(0 759)">
+      <rect id="사각형_507" data-name="사각형 507" width="1200" height="446" rx="12" transform="translate(360 6275)" fill="#eeeef1"/>
+      <text id="To_Be" data-name="To Be" transform="translate(963 6322)" fill="#1d1d1f" font-size="18" font-family="Pretendard-SemiBold, Pretendard" font-weight="600" letter-spacing="-0.005em"><tspan x="-22.97" y="0">To Be</tspan></text>
+      <g id="그룹_986" data-name="그룹 986" transform="translate(-32)">
+        <g id="사각형_497-2" data-name="사각형 497" transform="translate(602 6397)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_513" data-name="사각형 513" transform="translate(802 6397)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_521" data-name="사각형 521" transform="translate(1202 6397)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_517" data-name="사각형 517" transform="translate(1002 6397)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_508" data-name="사각형 508" transform="translate(602 6446)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_514" data-name="사각형 514" transform="translate(802 6446)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_520" data-name="사각형 520" transform="translate(1202 6446)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_518" data-name="사각형 518" transform="translate(1002 6446)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_509" data-name="사각형 509" transform="translate(602 6495)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_515" data-name="사각형 515" transform="translate(802 6495)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_519" data-name="사각형 519" transform="translate(1202 6495)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_510" data-name="사각형 510" transform="translate(602 6544)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_516" data-name="사각형 516" transform="translate(802 6544)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_511" data-name="사각형 511" transform="translate(602 6593)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <g id="사각형_512" data-name="사각형 512" transform="translate(602 6642)" fill="none" stroke="#1d1d1f" stroke-width="1">
+          <rect width="180" height="39" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="179" height="38" rx="3.5" fill="none"/>
+        </g>
+        <text id="주문제작_공정도" data-name="주문제작 공정도" transform="translate(692 6422)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-50.126" y="0">주문제작 공정도</tspan></text>
+        <text id="회사소개-3" data-name="회사소개" transform="translate(892 6422)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-27.536" y="0">회사소개</tspan></text>
+        <text id="반도체" transform="translate(692 6471)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-20.662" y="0">반도체</tspan></text>
+        <text id="연혁-2" data-name="연혁" transform="translate(892 6471)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-13.788" y="0">연혁</tspan></text>
+        <text id="자동차_공조_부품" data-name="자동차 공조/부품" transform="translate(692 6569)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-52.758" y="0">자동차 공조/부품</tspan></text>
+        <text id="파트너사-2" data-name="파트너사" transform="translate(892 6569)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-27.536" y="0">파트너사</tspan></text>
+        <text id="임플란트" transform="translate(692 6520)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-27.536" y="0">임플란트</tspan></text>
+        <text id="인증서_및_특허" data-name="인증서 및 특허" transform="translate(892 6520)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-45.22" y="0">인증서 및 특허</tspan></text>
+        <text id="가정_산업용_공조" data-name="가정/산업용 공조" transform="translate(692 6618)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-52.758" y="0">가정/산업용 공조</tspan></text>
+        <text id="마찰교반용접" transform="translate(692 6667)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-41.284" y="0">마찰교반용접</tspan></text>
+        <text id="회사소식" transform="translate(1092 6422)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-27.536" y="0">회사소식</tspan></text>
+        <text id="카탈로그-2" data-name="카탈로그" transform="translate(1092 6471)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-27.536" y="0">카탈로그</tspan></text>
+        <text id="문의하기-2" data-name="문의하기" transform="translate(1292 6471)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-27.536" y="0">문의하기</tspan></text>
+        <text id="오시는_길-2" data-name="오시는 길" transform="translate(1292 6520)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-29.504" y="0">오시는 길</tspan></text>
+        <text id="공지사항-2" data-name="공지사항" transform="translate(1292 6422)" fill="#1d1d1f" font-size="16" font-family="Pretendard-Regular, Pretendard" letter-spacing="-0.005em"><tspan x="-27.536" y="0">공지사항</tspan></text>
+        <rect id="사각형_492-2" data-name="사각형 492" width="180" height="45" rx="4" transform="translate(602 6342)"/>
+        <rect id="사각형_503" data-name="사각형 503" width="180" height="45" rx="4" transform="translate(802 6342)"/>
+        <rect id="사각형_504" data-name="사각형 504" width="180" height="45" rx="4" transform="translate(1002 6342)"/>
+        <rect id="사각형_505" data-name="사각형 505" width="180" height="45" rx="4" transform="translate(1202 6342)"/>
+        <text id="절삭공구_솔루션" data-name="절삭공구 솔루션" transform="translate(692 6371)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-56.331" y="0">절삭공구 솔루션</tspan></text>
+        <text id="회사소개-4" data-name="회사소개" transform="translate(892 6371)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-30.978" y="0">회사소개</tspan></text>
+        <text id="홍보센터" transform="translate(1092 6371)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-30.978" y="0">홍보센터</tspan></text>
+        <text id="고객센터" transform="translate(1292 6371)" fill="#fff" font-size="18" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.005em"><tspan x="-30.978" y="0">고객센터</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

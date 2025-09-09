@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="60" viewBox="0 0 52 60">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#555556"/>
+    </linearGradient>
+  </defs>
+  <path id="합치기_1" data-name="합치기 1" d="M-6390,33.869h9.144l13.8,13.864V0h6.254V47.6l13.661-13.731H-6338L-6364,60Z" transform="translate(6390)" fill="url(#linear-gradient)"/>
+</svg>
