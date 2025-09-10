@@ -99,7 +99,7 @@
 
 .text_box .detail_box {
     padding: 0 60px;
-    /* background: #EEEEF1; */
+    background: #EEEEF1;
 }
 
 .text_box .detail_box .inner {
@@ -138,19 +138,23 @@
 
 .text_box .detail_box .view_site {
     display: inline-block;
-    margin-bottom: 80px;
 }
 
 .text_box .detail_box .view_site a {
     padding: 16px 20px;
-    background: var(--color-07);
-    color: var(--color-01);
+    /* background: var(--color-07); */
+    color: var(--color-06);
+    border: solid 1px var(--color-06);
 }
 
 .text_box .detail_box .view_site i {
     margin-left: 8px;
     transform: translateY(1px);
 }
+
+
+
+
 
 /* 비디오 시작 */
 .am_video_box {
@@ -193,7 +197,7 @@
 /* 성진엔테크만 solution_box 컬러 설정값 다름!!!!! */
 .solution_box {
     padding: 0 60px;
-    background-color: #EEEFF1;
+    background-color: #fff;
 }
 
 .solution_box .solution {
@@ -277,6 +281,117 @@
     padding: 60px 20px 60px 20px;
     background: var(--color-00);
 }
+
+
+/* 플렉스 warp 부분 solution 1,2 동일 */
+.sol1 .flex_wrap,
+.sol2 .flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.sol1 .flex_wrap .item,
+.sol2 .flex_wrap .item {
+    flex: 0 0 calc(25% - 15px);
+    /* flex-grow 0 → 폭 고정, flex-shrink 0 → 줄어들지 않음 */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.sol1 .flex_wrap .item img,
+.sol2 .flex_wrap .item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 솔루션 3, 4레이아웃 동일 */
+.sol3 .flex_wrap {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sol3 .item {
+    position: relative;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sol3 .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* 솔루션 4 + 영상있음 */
+.sol4 .flex_wrap {
+    display: flex;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.sol4 .flex_wrap .item {
+    flex: 1 1 50%;
+    /* 균등 분배 */
+    max-width: 900px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    /* 안에서 넘치는 영상 숨김 */
+}
+
+.sol4 .flex_wrap .item.bs {
+    background: #EEEEF1;
+}
+
+.sol4 .flex_wrap .item.st {
+    background: #202020;
+}
+
+.sol4 .flex_wrap .mockup_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sol4 .flex_wrap video {
+    width: 100%;
+    /* 부모 폭 기준으로 줄어듦 */
+    max-height: 780px;
+    /* 최대 높이 780px */
+    height: auto;
+    /* 비율 유지 */
+    object-fit: contain;
+    /* 영역 안에 비율 유지 */
+    display: block;
+}
+
 
 
 
