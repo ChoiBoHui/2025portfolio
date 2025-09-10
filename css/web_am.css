@@ -152,12 +152,48 @@
     transform: translateY(1px);
 }
 
+/* 비디오 시작 */
+.am_video_box {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.am_video_box video {
+    width: 1240px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.am_video_box .amppbtn {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* 안 보일 땐 클릭 방지 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.am_video_box:hover .amppbtn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.am_video_box.paused .amppbtn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
 
 /* solution_box Start */
 /* 성진엔테크만 solution_box 컬러 설정값 다름!!!!! */
 .solution_box {
     padding: 0 60px;
-    background-color: #F2F4F8;
+    background-color: #EEEFF1;
 }
 
 .solution_box .solution {
@@ -193,23 +229,64 @@
 }
 
 .solution_box .img_title {
-    color: var(--color-03);
+    color: var(--color-06);
 }
 
 /* solution 안에 있는 detail_text의 margin-bottom은 그때그때마다 다름 */
 
 /* 솔루션1 sol1 */
 .solution_box .sol1 .detail_text {
+    margin-bottom: 60px;
+}
+
+.solution_box .sol1 .solution_des {
     margin-bottom: 100px;
+}
+
+.solution_box .sol1 .solution_des .des_table {
+    padding: 20px 0;
+    display: flex;
+    border-top: solid 1px var(--color-06);
+    color: var(--color-06);
+    line-height: 24px;
+}
+
+.solution_box .sol1 .solution_des .title {
+    width: 280px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.solution_box .sol1 .solution_des .des_box {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sol1 .imgbox_center img {
+    width: 100%;
+    max-width: 1672px;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .sol1 .imgbox_center {
     max-width: 1800px;
     margin: 0 auto;
     text-align: center;
-    padding: 80px 20px 120px 20px;
+    padding: 60px 20px 60px 20px;
     background: var(--color-00);
 }
+
+
+
+
+
+
+
+
+
+
 
 /* 솔루션2 sol2 */
 .sol2 .detail_text {
@@ -222,42 +299,8 @@
 }
 
 /* 솔루션3 sol3 */
-.sol3 .detail_text {
+.detail_text {
     margin-bottom: 100px;
-}
-
-/* 비디오 시작 */
-.sol3 .dh_layout_video {
-    position: relative;
-}
-
-.sol3 .dh_layout_video video {
-    width: 1240px;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-.sol3 .dh_layout_video .dhppbtn {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-    /* 안 보일 땐 클릭 방지 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-}
-
-.sol3 .dh_layout_video:hover .dhppbtn {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.sol3 .dh_layout_video.paused .dhppbtn {
-    opacity: 1;
-    pointer-events: auto;
 }
 
 

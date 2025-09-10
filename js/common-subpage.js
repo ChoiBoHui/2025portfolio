@@ -135,6 +135,34 @@ $(function () {
 
 
 
+    // 아몽 메인 영상
+    const amvideo = $('.am_video').get(0);
+
+    // 영상 재생 시작 → 버튼은 pause 아이콘
+    $(amvideo).on('play', function () {
+        $('.amppbtn>img').attr('src', './img/pauseBtn.svg');
+        $('.am_video_box').removeClass('paused');
+    });
+
+    // 영상 정지 → 버튼은 play 아이콘
+    $(amvideo).on('pause ended', function () {
+        $('.amppbtn>img').attr('src', './img/playBtn.svg');
+        $('.am_video_box').addClass('paused');
+    });
+
+    // 영상 종료 → 처음으로 되돌리고, 버튼은 play 아이콘
+    $(amvideo).on('ended', function () {
+        amvideo.currentTime = 0;
+    });
+
+    // 버튼 클릭 시 재생/정지 토글
+    $('.amppbtn').on('click', function () {
+        if (amvideo.paused) {
+            amvideo.play();
+        } else {
+            amvideo.pause();
+        }
+    });
 
 
 
