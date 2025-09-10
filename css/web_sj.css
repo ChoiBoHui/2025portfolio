@@ -122,6 +122,12 @@
     color: var(--color-07);
 }
 
+/* 3d-pi 부분에 사용된 span이랑 겹쳐서 유의해서 사용 */
+.text_box .detail_box .detail_text span {
+    font-weight: 700;
+    color: var(--color-08);
+}
+
 .text_box .detail_box .detail_text p:not(:last-child) {
     margin-bottom: 60px;
 }
@@ -130,18 +136,16 @@
     margin-bottom: 40px;
 }
 
-.text_box .detail_box .detail_text span {
-    font-size: 24px;
-    font-weight: 400;
-    color: var(--color-06);
-}
 
 .text_box .detail_box .view_site {
     display: inline-block;
+    margin-bottom: 80px;
+}
+
+.text_box .detail_box .view_site a {
     padding: 16px 20px;
     background: var(--color-07);
     color: var(--color-01);
-    margin-bottom: 80px;
 }
 
 .text_box .detail_box .view_site i {
