@@ -1,0 +1,175 @@
+/* :root {
+    --color-08: #000;
+    --color-07: #1d1d1f;
+    --color-06: #3A3A3B;
+    --color-05: #555556;
+    --color-04: #99999A;
+    --color-03: #CCCCCF;
+    --color-02: #E6E6E7;
+    --color-01: #EEEEF1;
+    --color-00: #fff;
+} */
+
+.main_visual {
+    position: relative;
+}
+
+/* 공통 */
+.img_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-06);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 메인 비주얼 */
+.main_visual .main_bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main_visual .main_bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* 페이지 인포 */
+.main_visual .page_info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 60px 100px 60px;
+}
+
+.main_visual .page_info .page_title {
+    color: var(--color-07);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.main_visual .page_info .page_title .making_date {
+    color: var(--color-05);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* 본문 시작 */
+
+/* text_box Start */
+/* .text_box{} */
+
+.text_box .detail_box {
+    padding: 0 60px;
+    /* background: #EEEEF1; */
+}
+
+.text_box .detail_box .inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 120px 0 100px 0;
+}
+
+.text_box .detail_box .detail_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-05);
+    margin-bottom: 40px;
+}
+
+.text_box .detail_box .detail_text p {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 54px;
+    color: var(--color-07);
+}
+
+/* 3d-pi 부분에 사용된 span이랑 겹쳐서 유의해서 사용 */
+.text_box .detail_box .detail_text span {
+    font-weight: 700;
+    color: var(--color-08);
+}
+
+.text_box .detail_box .detail_text p:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.text_box .detail_box .view_site {
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
+.text_box .detail_box .view_site a {
+    padding: 16px 20px;
+    background: var(--color-07);
+    color: var(--color-01);
+}
+
+.text_box .detail_box .view_site i {
+    margin-left: 8px;
+    transform: translateY(1px);
+}
+
+/* 목업 이미지 */
+.mockup_img {
+    max-width: 1800px;
+    margin: 0 auto 160px auto;
+}
+
+
+
+
+
+/* 테블릿 */
+@media (max-width: 1240px) {
+    .main_visual {
+        position: relative;
+    }
+
+    /* 메인 비주얼 */
+    .main_visual .main_bg {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .main_visual .main_bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* 페이지 인포 */
+    .main_visual .page_info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 20px 100px 20px;
+    }
+
+    .main_visual .page_info .page_title {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .main_visual .page_info .page_title .making_date {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    /* 본문 시작 */
+}
+
+
+/* 모바일 */
+/* @media (max-width: 1024px) {} */
