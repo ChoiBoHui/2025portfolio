@@ -1,4 +1,26 @@
 /* main Start */
+
+.main_title {
+    padding: 210px 0 0 0;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.main_title .title {
+    font-size: 68px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.main_title .subtitle {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+
+
+/* 탭메뉴 */
 .menu_wrap {
     margin: 0 auto;
     max-width: 1800px;
@@ -6,39 +28,35 @@
 
 .tab_menu {
     display: flex;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 400;
-    margin-bottom: 48px;
-    padding-top: 200px;
+    padding-bottom: 48px;
 }
 
-.tab_menu a {
-    padding: 10px 16px;
+.tab_menu a>div {
+    padding: 8px 20px;
+    color: var(--color-04);
+    border: solid 1px var(--color-04);
+    background: var(--color-00);
+}
+
+.tab_menu a:hover>div {
+    color: var(--color-07);
+    border: solid 1px var(--color-07);
+    background: var(--color-00);
+}
+
+.tab_menu a.select>div {
+    color: var(--color-00);
+    border: solid 1px var(--color-07);
+    background: var(--color-07);
 }
 
 .tab_menu>div:not(:first-child) {
     margin-left: 8px;
 }
 
-.tab_menu {
-    transform: translateX(-16px);
-}
 
-.tab_menu a:hover {
-    color: var(--color-07) !important;
-}
-
-#web .tab_menu,
-#pr_3d .tab_menu,
-#visual .tab_menu {
-    color: var(--color-04);
-}
-
-#web .tab_menu .web_menu,
-#pr_3d .tab_menu .pr_3d_menu,
-#visual .tab_menu .visual_menu {
-    color: var(--color-07) !important;
-}
 
 
 
@@ -50,7 +68,7 @@
 #web,
 #pr_3d,
 #visual {
-    /* margin-bottom: 200px; */
+    padding: 160px 0 0 0;
 }
 
 .flex_wrap {
@@ -128,7 +146,68 @@
 /* 테블릿 */
 @media (max-width: 1240px) {
 
+    .main_title {
+        padding: 210px 0 0 0;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
 
+    .main_title .title {
+        font-size: 48px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .main_title .subtitle {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+
+
+    /* 탭메뉴 */
+    .menu_wrap {
+        margin: 0 auto;
+        max-width: 1800px;
+    }
+
+    .tab_menu {
+        display: flex;
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 32px;
+    }
+
+    .tab_menu a>div {
+        padding: 8px 16px;
+        color: var(--color-04);
+        border: solid 1px var(--color-04);
+        background: var(--color-00);
+    }
+
+    .tab_menu a:hover>div {
+        color: var(--color-07);
+        border: solid 1px var(--color-07);
+        background: var(--color-00);
+    }
+
+    .tab_menu a.select>div {
+        color: var(--color-00);
+        border: solid 1px var(--color-07);
+        background: var(--color-07);
+    }
+
+    .tab_menu>div:not(:first-child) {
+        margin-left: 8px;
+    }
+
+
+
+
+
+
+
+    /* 프로젝트 */
     .project .title_box .project_name {
         color: var(--color-00);
         font-size: 26px;
