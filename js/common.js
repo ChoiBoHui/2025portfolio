@@ -56,21 +56,21 @@ $(function () {
 
 
     // 경험 페이지 완료 전까지 임시 메뉴 스크롤
-    $('.menu_ex').on('click', function (e) {
-        e.preventDefault(); // 기본 a 태그 이동 막기
-        const target = $($(this).attr('href')); // href 속성에서 id 가져오기
+    // $('.menu_ex').on('click', function (e) {
+    //     e.preventDefault(); // 기본 a 태그 이동 막기
+    //     const target = $($(this).attr('href')); // href 속성에서 id 가져오기
 
-        if (target.length) {
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 300); // 600ms 동안 스무스하게 이동
-        }
+    //     if (target.length) {
+    //         $('html, body').animate({
+    //             scrollTop: target.offset().top
+    //         }, 300); // 600ms 동안 스무스하게 이동
+    //     }
 
-        if ($(window).width() <= 1240) {
-            $('.topmenu').removeClass('open');
-            $('body').removeClass('noscroll'); // 스크롤 잠금 풀어주기 (있으면)
-        }
-    });
+    //     if ($(window).width() <= 1240) {
+    //         $('.topmenu').removeClass('open');
+    //         $('body').removeClass('noscroll'); // 스크롤 잠금 풀어주기 (있으면)
+    //     }
+    // });
 
     // 탑 버튼
     $('.topbutton').on('click', function () {
@@ -78,8 +78,28 @@ $(function () {
     });
 
 
+    // experience 페이지 탭메뉴
+    // $('.web_menu, .pr_3d_menu, .visual_menu').on('click', function (e) {
+    //     e.preventDefault(); // 기본 a 태그 이동 막기
+    //     const target = $($(this).attr('href')); // href 속성에서 id 가져오기
+
+    //     if (target.length) {
+    //         $('html, body').stop().animate({
+    //             scrollTop: target.offset().top
+    //         }, 300); // 600ms 동안 부드럽게 스크롤
+    //     }
+    // });
 
 
+    // 탭메뉴 이벤트
+    // $('.tab_menu a').hover(
+    //     function () {
+    //         $('.tab_menu a').not(this).css('color', '#99999A')
+    //     },
+    //     function () {
+    //         $('.tab_menu a').css('color', '#1d1d1f')
+    //     }
+    // );
 
 
 

@@ -53,10 +53,10 @@ $(function () {
         alert('준비중 입니다.');
     });
 
-    $('.menu_ex').on('click', function (e) {
-        e.preventDefault();
-        alert('준비중 입니다.');
-    });
+    // $('.menu_ex').on('click', function (e) {
+    //     e.preventDefault();
+    //     alert('준비중 입니다.');
+    // });
 
     // 탑 버튼
     $('.topbutton').on('click', function () {

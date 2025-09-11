@@ -1,0 +1,190 @@
+/* main Start */
+.menu_wrap {
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+.tab_menu {
+    display: flex;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    padding-top: 200px;
+}
+
+.tab_menu a {
+    padding: 10px 16px;
+}
+
+.tab_menu>div:not(:first-child) {
+    margin-left: 8px;
+}
+
+.tab_menu {
+    transform: translateX(-16px);
+}
+
+.tab_menu a:hover {
+    color: var(--color-07) !important;
+}
+
+#web .tab_menu,
+#pr_3d .tab_menu,
+#visual .tab_menu {
+    color: var(--color-04);
+}
+
+#web .tab_menu .web_menu,
+#pr_3d .tab_menu .pr_3d_menu,
+#visual .tab_menu .visual_menu {
+    color: var(--color-07) !important;
+}
+
+
+
+/* 프로젝트 Start */
+.project {
+    margin-bottom: 160px;
+}
+
+#web,
+#pr_3d,
+#visual {
+    /* margin-bottom: 200px; */
+}
+
+.flex_wrap {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* flex-direction: row; */
+}
+
+.project .item {
+    position: relative;
+    /* flex: 1 1 calc(50% - 10px); */
+    flex: 0 0 calc(50% - 10px);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.project .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project .item:hover img {
+    transform: scale(1.1);
+}
+
+
+.project .title_box {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 32px 40px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.project .title_box .project_name {
+    color: var(--color-00);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 36px;
+}
+
+.project .title_box .sub_info {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    color: var(--color-02);
+    align-items: center;
+}
+
+.project .sub_info .tag {
+    font-weight: 500;
+    padding: 4px 8px;
+    background-color: var(--color-07);
+}
+
+
+
+
+
+
+
+/* main End */
+
+
+/* 테블릿 */
+@media (max-width: 1240px) {
+
+
+    .project .title_box .project_name {
+        color: var(--color-00);
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .project .title_box .sub_info {
+        font-size: 16px;
+    }
+
+
+}
+
+
+/* 모바일 */
+@media (max-width: 1024px) {
+    .section_title {
+        font-size: 48px;
+        font-weight: 400;
+        margin-bottom: 60px;
+    }
+
+    .section_title .firstline {
+        margin-bottom: 9px;
+    }
+
+    .section_title .secondline i {
+        width: 25px;
+        transform: translate(-7px, 7px);
+    }
+
+    .project .item {
+        flex: 1 1 100%;
+    }
+
+
+
+
+    .project .title_box {
+        position: absolute;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 40px 20px 24px 20px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    .project .title_box .project_name {
+        color: var(--color-00);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+
+
+}
