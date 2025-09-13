@@ -151,6 +151,7 @@
 }
 
 .text_box .detail_box .view_site a {
+    display: inline-block;
     padding: 16px 20px;
     background: var(--color-07);
     color: var(--color-01);
@@ -355,6 +356,14 @@
 @media (max-width: 1024px) {
 
     /* 공통요소 */
+    .img_title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--color-06);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
     .main_visual {
         position: relative;
     }
@@ -435,9 +444,9 @@
     }
 
     .text_box .detail_box .detail_text p {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 500;
-        line-height: 34px;
+        line-height: 40px;
         color: var(--color-07);
     }
 
@@ -458,6 +467,26 @@
         line-height: 40px;
         color: var(--color-01);
     }
+
+
+
+    /* 성진엔테크 부분 */
+    .sol1 .flex_wrap {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .sol3 .top_visual {
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        background: var(--color-07);
+        text-align: center;
+    }
+
 
 
 }
