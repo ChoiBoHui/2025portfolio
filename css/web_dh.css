@@ -318,7 +318,6 @@
 
 
     .main_visual .page_info .sub_info .info_title {
-        color: var(--color-03);
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 10px;
@@ -326,7 +325,6 @@
 
     .main_visual .page_info .sub_info .info_des {
         display: inline-block;
-        color: var(--color-01);
         font-size: 18px;
         font-weight: 500;
     }
@@ -336,18 +334,15 @@
         display: inline-block;
         width: 2px;
         height: 14px;
-        background: rgba(255, 255, 255, 0.1);
         margin: auto 8px;
     }
 
     .main_visual .page_info .page_title {
-        color: var(--color-00);
         font-size: 42px;
         font-weight: 700;
     }
 
     .main_visual .page_info .page_title .making_date {
-        color: var(--color-03);
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 10px;
@@ -364,7 +359,6 @@
     .img_title {
         font-size: 18px;
         font-weight: 600;
-        color: var(--color-06);
         margin-bottom: 20px;
         text-align: center;
     }
@@ -407,7 +401,6 @@
 
 
     .main_visual .page_info .sub_info .info_title {
-        color: var(--color-03);
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 10px;
@@ -415,7 +408,6 @@
 
     .main_visual .page_info .sub_info .info_des {
         display: inline-block;
-        color: var(--color-01);
         font-size: 18px;
         font-weight: 500;
     }
@@ -425,18 +417,15 @@
         display: inline-block;
         width: 2px;
         height: 14px;
-        background: rgba(255, 255, 255, 0.1);
         margin: auto 8px;
     }
 
     .main_visual .page_info .page_title {
-        color: var(--color-00);
         font-size: 42px;
         font-weight: 700;
     }
 
     .main_visual .page_info .page_title .making_date {
-        color: var(--color-03);
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 10px;
@@ -445,14 +434,12 @@
     /* 본문 텍스트 */
     .text_box .detail_box {
         padding: 0 20px;
-        background: #fff;
     }
 
     .text_box .detail_box .detail_text p {
         font-size: 24px;
         font-weight: 500;
         line-height: 40px;
-        color: var(--color-07);
     }
 
     .text_box .detail_box .detail_text p:not(:last-child) {
@@ -463,14 +450,12 @@
     /* 성진엔테크만 solution_box 컬러 설정값 다름!!!!! */
     .solution_box {
         padding: 0 20px;
-        background-color: #F2F4F8;
     }
 
     .solution_box .detail_text p {
         font-size: 24px;
         font-weight: 500;
         line-height: 40px;
-        color: var(--color-07);
     }
 
 
@@ -482,7 +467,6 @@
         margin: 0 auto;
         text-align: center;
         padding: 40px 20px 60px 20px;
-        background: var(--color-00);
     }
 
     .solution_box .sol1 .detail_text {

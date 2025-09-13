@@ -51,6 +51,7 @@
     color: var(--color-07);
     font-size: 48px;
     font-weight: 700;
+    line-height: 54px;
 }
 
 .main_visual .page_info .page_title .making_date {
@@ -58,6 +59,7 @@
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
+    line-height: 16px;
 }
 
 /* 본문 시작 */
@@ -106,6 +108,7 @@
 }
 
 .text_box .detail_box .view_site a {
+    display: inline-block;
     padding: 16px 20px;
     background: var(--color-07);
     color: var(--color-01);
@@ -128,6 +131,8 @@
 
 /* 테블릿 */
 @media (max-width: 1240px) {
+
+    /* 공통요소 */
     .main_visual {
         position: relative;
     }
@@ -153,7 +158,37 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 0 20px 100px 20px;
+        padding: 0 60px 60px 60px;
+    }
+
+    .main_visual .page_info .sub_info .info_box:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .main_visual .page_info .sub_info .info_box:last-child {
+        margin-bottom: 48px;
+        /* 제일 밑에 위치하는 info는 48px 그 위로는 32px */
+    }
+
+
+    .main_visual .page_info .sub_info .info_title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .main_visual .page_info .sub_info .info_des {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .main_visual .info_des>div:not(:last-child)::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 14px;
+        margin: auto 8px;
     }
 
     .main_visual .page_info .page_title {
@@ -172,4 +207,111 @@
 
 
 /* 모바일 */
-/* @media (max-width: 1024px) {} */
+@media (max-width: 1024px) {
+
+    /* 공통요소 */
+    .img_title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--color-06);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .main_visual {
+        position: relative;
+    }
+
+    /* 메인 비주얼 */
+    .main_visual .main_bg {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .main_visual .main_bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* 페이지 인포 */
+    .main_visual .page_info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 20px 60px 20px;
+    }
+
+    .main_visual .page_info .sub_info .info_box:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .main_visual .page_info .sub_info .info_box:last-child {
+        margin-bottom: 48px;
+    }
+
+
+    .main_visual .page_info .sub_info .info_title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .main_visual .page_info .sub_info .info_des {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .main_visual .info_des>div:not(:last-child)::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 14px;
+        margin: auto 8px;
+    }
+
+    .main_visual .page_info .page_title {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .main_visual .page_info .page_title .making_date {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    /* 본문 텍스트 */
+    .text_box .detail_box {
+        padding: 0 20px;
+    }
+
+    .text_box .detail_box .detail_text p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    .text_box .detail_box .detail_text p:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    /* solution_box Start */
+    /* 성진엔테크만 solution_box 컬러 설정값 다름!!!!! */
+    .solution_box {
+        padding: 0 20px;
+    }
+
+    .solution_box .detail_text p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+
+}
