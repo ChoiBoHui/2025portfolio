@@ -64,10 +64,14 @@
 }
 
 .main_visual .page_info .sub_info .info_des {
-    display: flex;
+    display: inline-block;
     color: var(--color-01);
     font-size: 18px;
     font-weight: 500;
+}
+
+.main_visual .page_info .sub_info .info_des>div {
+    display: inline-block;
 }
 
 .main_visual .info_des>div:not(:first-child)::before {
@@ -83,6 +87,7 @@
     color: var(--color-00);
     font-size: 48px;
     font-weight: 700;
+    line-height: 54px;
 }
 
 .main_visual .page_info .page_title .making_date {
@@ -90,6 +95,7 @@
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
+    line-height: 16px;
 }
 
 /* 본문 시작 */
@@ -142,6 +148,7 @@
 }
 
 .text_box .detail_box .view_site a {
+    display: inline-block;
     padding: 16px 20px;
     background: var(--color-07);
     color: var(--color-01);
@@ -262,24 +269,28 @@
     font-weight: 400;
 }
 
+.sol1 .imgbox_center {
+    display: flex;
+    gap: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 64px 60px 64px;
+    background: var(--color-00);
+}
+
 .sol1 .imgbox_center img {
     width: 100%;
-    max-width: 1672px;
     height: auto;
     display: block;
     object-fit: cover;
 }
 
-.sol1 .imgbox_center {
-    max-width: 1800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 60px 20px 60px 20px;
-    background: var(--color-00);
+.sol1 .imgbox_center .img_des {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
-
-
-
 
 
 
@@ -333,7 +344,6 @@
     }
 
     .main_visual .page_info .sub_info .info_des {
-        display: flex;
         color: var(--color-01);
         font-size: 18px;
         font-weight: 500;
@@ -366,4 +376,176 @@
 
 
 /* 모바일 */
-/* @media (max-width: 1024px) {} */
+@media (max-width: 1024px) {
+
+    /* 공통요소 */
+    .img_title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--color-06);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .main_visual {
+        position: relative;
+    }
+
+    /* 메인 비주얼 */
+    .main_visual .main_bg {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .main_visual .main_bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    /* 페이지 인포 */
+    .main_visual .page_info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 20px 60px 20px;
+    }
+
+    .main_visual .page_info .sub_info .info_box:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .main_visual .page_info .sub_info .info_box:last-child {
+        margin-bottom: 48px;
+    }
+
+
+    .main_visual .page_info .sub_info .info_title {
+        color: var(--color-03);
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .main_visual .page_info .sub_info .info_des {
+        display: inline-block;
+        color: var(--color-01);
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .main_visual .info_des>div:not(:last-child)::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 14px;
+        background: rgba(255, 255, 255, 0.1);
+        margin: auto 8px;
+    }
+
+    .main_visual .page_info .page_title {
+        color: var(--color-00);
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .main_visual .page_info .page_title .making_date {
+        color: var(--color-03);
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    /* 본문 텍스트 */
+    .text_box .detail_box {
+        padding: 0 20px;
+    }
+
+    .text_box .detail_box .detail_text p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        color: var(--color-07);
+    }
+
+    .text_box .detail_box .detail_text p:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    /* solution_box Start */
+    /* 성진엔테크만 solution_box 컬러 설정값 다름!!!!! */
+    .solution_box {
+        padding: 0 20px;
+    }
+
+    .solution_box .detail_text p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        color: var(--color-07);
+    }
+
+    /* 아몽 전용 */
+    .solution_box .sol1 .solution_des {
+        margin-bottom: 60px;
+    }
+
+    .solution_box .sol1 .solution_des {
+        margin-bottom: 60px;
+    }
+
+    .solution_box .sol1 .solution_des .des_table {
+        padding: 30px 0;
+        display: flex;
+        border-top: solid 1px var(--color-06);
+        color: var(--color-06);
+        line-height: 24px;
+        flex-direction: column;
+    }
+
+    .solution_box .sol1 .solution_des .title {
+        width: 280px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .solution_box .sol1 .solution_des .des_box {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+
+    .sol1 .imgbox_center {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 1800px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 60px 20px 60px 20px;
+        background: var(--color-00);
+    }
+
+    .sol1 .imgbox_center img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    .sol1 .imgbox_center .img_des {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .sol1 .imgbox_center figure:first-child {
+        margin-bottom: 40px;
+    }
+
+}
