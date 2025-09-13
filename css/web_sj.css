@@ -271,6 +271,8 @@
 
 /* 테블릿 */
 @media (max-width: 1240px) {
+
+    /* 공통요소 */
     .main_visual {
         position: relative;
     }
@@ -351,6 +353,8 @@
 
 /* 모바일 */
 @media (max-width: 1024px) {
+
+    /* 공통요소 */
     .main_visual {
         position: relative;
     }
@@ -385,7 +389,6 @@
 
     .main_visual .page_info .sub_info .info_box:last-child {
         margin-bottom: 48px;
-        /* 제일 밑에 위치하는 info는 48px 그 위로는 32px */
     }
 
 
@@ -425,8 +428,7 @@
         margin-bottom: 10px;
     }
 
-
-    /* 공통요소 */
+    /* 본문 텍스트 */
     .text_box .detail_box {
         padding: 0 20px;
         background: #EEEEF1;
@@ -441,6 +443,13 @@
 
     .text_box .detail_box .detail_text p:not(:last-child) {
         margin-bottom: 30px;
+    }
+
+    .solution_box .detail_text p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        color: var(--color-01);
     }
 
 
