@@ -22,9 +22,10 @@ main .bg_video {
 /* .highlights .container {} */
 
 .highlights .section_title {
+    max-width: 1800px;
     font-size: 68px;
     font-weight: 400;
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
     /* 폰트 라인 맞춰서 간격 수정하다보니 66px이 맞지만 편의성 때문에 60px로 고정 */
 }
 
@@ -45,6 +46,10 @@ main .bg_video {
     flex-wrap: wrap;
     gap: 20px;
     /* flex-direction: row; */
+}
+
+.highlights .project {
+    margin-bottom: 60px;
 }
 
 .highlights .project .item {
@@ -100,7 +105,23 @@ main .bg_video {
     background-color: var(--color-07);
 }
 
+.highlights .view_all_project {
+    max-width: 1800px;
+    margin: 0 auto;
+    text-align: right;
+}
 
+.highlights .view_all_project .view_btn_wrap {
+    display: inline-block;
+}
+
+
+.highlights .view_all_project .view_all_btn {
+    display: flex;
+    gap: 12px;
+    font-size: 28px;
+    align-items: center;
+}
 
 
 
