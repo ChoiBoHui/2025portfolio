@@ -415,6 +415,11 @@
     }
 
     /* 본문 텍스트 */
+    .text_box .detail_box .detail_title {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
     .text_box .detail_box {
         padding: 0 20px;
     }
@@ -476,6 +481,10 @@
 
     .solution_box .sol.sb .board .sb_des .inner {
         padding: 20px 0;
+    }
+
+    .text_box .detail_box .detail_text span {
+        font-size: 18px;
     }
 
 }
