@@ -1,14 +1,14 @@
 $(function () {
 
     // 메인메뉴 호버 이벤트
-    $('.topmenu a').hover(
-        function () {
-            $('.topmenu a').not(this).css('opacity', '60%')
-        },
-        function () {
-            $('.topmenu a').css('opacity', '100%')
-        }
-    );
+    // $('.topmenu a').hover(
+    //     function () {
+    //         $('.topmenu a').not(this).css('opacity', '60%')
+    //     },
+    //     function () {
+    //         $('.topmenu a').css('opacity', '100%')
+    //     }
+    // );
 
     // 메인메뉴 스크롤 이벤트
     $(window).on('scroll', function () {
@@ -48,10 +48,10 @@ $(function () {
 
 
     // 준비중 얼랏 창
-    $('.menu_bs').on('click', function (e) {
-        e.preventDefault();
-        alert('준비중 입니다.');
-    });
+    // $('.menu_bs').on('click', function (e) {
+    //     e.preventDefault();
+    //     alert('준비중 입니다.');
+    // });
 
     // $('.menu_ex').on('click', function (e) {
     //     e.preventDefault();

@@ -443,12 +443,6 @@
         background: #EEEEF1;
     }
 
-    .text_box .detail_box .detail_title {
-        font-size: 16px;
-        margin-bottom: 30px;
-    }
-
-
     .text_box .detail_box .detail_text p {
         font-size: 20px;
         font-weight: 500;
@@ -465,12 +459,6 @@
         padding: 0 20px;
         background-color: #000;
     }
-
-    .solution_box .detail_title {
-        font-size: 16px;
-        margin-bottom: 30px;
-    }
-
 
     .solution_box .detail_text p {
         font-size: 20px;

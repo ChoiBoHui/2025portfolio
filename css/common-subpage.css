@@ -53,6 +53,23 @@ header.scroll {
     background: var(--color-00);
 }
 
+/* 브랜드 스토리 완료 전까지 임시 */
+.brand_story {
+    position: relative;
+}
+
+.menu_bs {
+    opacity: 0.5;
+}
+
+.brand_story img {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    transform: rotate(-15deg);
+}
+
+
 /* 네비 영역 */
 header nav {
     display: flex;
@@ -217,6 +234,12 @@ footer .topbutton i {
     .hamburger {
         display: block;
     }
+
+    /* 브랜드 스토리 완료 전까지 임시 */
+    .brand_story img {
+        height: 14px;
+    }
+
 
 
     /* footer Start */
