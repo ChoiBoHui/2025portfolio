@@ -74,7 +74,7 @@
     display: inline-block;
 }
 
-.main_visual .info_des>div:not(:first-child)::before {
+.main_visual .info_des>div:not(:last-child)::after {
     content: "";
     display: inline-block;
     width: 2px;
