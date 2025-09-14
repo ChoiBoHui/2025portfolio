@@ -569,9 +569,9 @@
     }
 
     .text_box .detail_box .detail_text p {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
-        line-height: 40px;
+        line-height: 34px;
     }
 
     .text_box .detail_box .detail_text p:not(:last-child) {
@@ -585,9 +585,9 @@
     }
 
     .solution_box .detail_text p {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
-        line-height: 40px;
+        line-height: 34px;
     }
 
 

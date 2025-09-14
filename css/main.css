@@ -89,6 +89,7 @@ main .bg_video {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 12px;
+    line-height: 36px;
 }
 
 .highlights .project .title_box .sub_info {
