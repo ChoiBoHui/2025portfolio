@@ -166,11 +166,63 @@ $(function () {
 
 
 
+    // 헤라 크로스 브라우저 체크 영상
+    const hera_android = $('.hera_android_video').get(0);
+
+    // 영상 재생 시작 → 버튼은 pause 아이콘
+    $(hera_android).on('play', function () {
+        $('.herappbtnad>img').attr('src', './img/pauseBtn.svg');
+        $('.view_android').removeClass('paused');
+    });
+
+    // 영상 정지 → 버튼은 play 아이콘
+    $(hera_android).on('pause ended', function () {
+        $('.herappbtnad>img').attr('src', './img/playBtn.svg');
+        $('.view_android').addClass('paused');
+    });
+
+    // 영상 종료 → 처음으로 되돌리고, 버튼은 play 아이콘
+    $(hera_android).on('ended', function () {
+        hera_android.currentTime = 0;
+    });
+
+    // 버튼 클릭 시 재생/정지 토글
+    $('.herappbtnad').on('click', function () {
+        if (hera_android.paused) {
+            hera_android.play();
+        } else {
+            hera_android.pause();
+        }
+    });
 
 
+    const hera_ios = $('.hera_ios_video').get(0);
 
+    // 영상 재생 시작 → 버튼은 pause 아이콘
+    $(hera_ios).on('play', function () {
+        $('.herappbtnio>img').attr('src', './img/pauseBtn.svg');
+        $('.view_ios').removeClass('paused');
+    });
 
+    // 영상 정지 → 버튼은 play 아이콘
+    $(hera_ios).on('pause ended', function () {
+        $('.herappbtnio>img').attr('src', './img/playBtn.svg');
+        $('.view_ios').addClass('paused');
+    });
 
+    // 영상 종료 → 처음으로 되돌리고, 버튼은 play 아이콘
+    $(hera_ios).on('ended', function () {
+        hera_ios.currentTime = 0;
+    });
+
+    // 버튼 클릭 시 재생/정지 토글
+    $('.herappbtnio').on('click', function () {
+        if (hera_ios.paused) {
+            hera_ios.play();
+        } else {
+            hera_ios.pause();
+        }
+    });
 
 
 

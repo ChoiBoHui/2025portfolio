@@ -1,0 +1,550 @@
+/* :root {
+    --color-08: #000;
+    --color-07: #1d1d1f;
+    --color-06: #3A3A3B;
+    --color-05: #555556;
+    --color-04: #99999A;
+    --color-03: #CCCCCF;
+    --color-02: #E6E6E7;
+    --color-01: #EEEEF1;
+    --color-00: #fff;
+} */
+
+.main_visual {
+    position: relative;
+}
+
+/* 공통 */
+.img_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-06);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 메인 비주얼 */
+.main_visual .main_bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main_visual .main_bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* 페이지 인포 */
+.main_visual .page_info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 60px 100px 60px;
+}
+
+.main_visual .page_info .sub_info .info_box:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.main_visual .page_info .sub_info .info_box:last-child {
+    margin-bottom: 48px;
+    /* 제일 밑에 위치하는 info는 48px 그 위로는 32px */
+}
+
+.main_visual .page_info .sub_info .info_title {
+    color: var(--color-03);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.main_visual .page_info .sub_info .info_des {
+    display: inline-block;
+    color: var(--color-01);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main_visual .page_info .sub_info .info_des>div {
+    display: inline-block;
+}
+
+.main_visual .info_des>div:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: auto 8px;
+}
+
+.main_visual .page_info .page_title {
+    color: var(--color-00);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.main_visual .page_info .page_title .making_date {
+    color: var(--color-03);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 16px;
+}
+
+/* 본문 시작 */
+
+/* text_box Start */
+/* .text_box{} */
+
+.text_box .detail_box {
+    padding: 0 60px;
+    /* background: #EEEEF1; */
+}
+
+.text_box .detail_box .inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.text_box .detail_box .detail_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-05);
+    margin-bottom: 40px;
+}
+
+.text_box .detail_box .detail_text p {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 54px;
+    color: var(--color-07);
+}
+
+/* 3d-pi 부분에 사용된 span이랑 겹쳐서 유의해서 사용 */
+.text_box .detail_box .detail_text span {
+    font-weight: 700;
+    color: var(--color-08);
+}
+
+.text_box .detail_box .detail_text p:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.text_box .detail_box .detail_text p:last-child {
+    margin-bottom: 40px;
+}
+
+.text_box .detail_box .view_site {
+    display: inline-block;
+}
+
+.text_box .detail_box .view_site a {
+    display: inline-block;
+    padding: 16px 20px;
+    background: var(--color-07);
+    color: var(--color-01);
+    border: solid 1px var(--color-08);
+}
+
+.text_box .detail_box .view_github a {
+    display: inline-block;
+    padding: 16px 20px;
+    background: var(--color-00);
+    color: var(--color-07);
+    border: solid 1px var(--color-07);
+    box-sizing: border-box;
+}
+
+.text_box .detail_box .view_site i {
+    margin-left: 8px;
+    transform: translateY(1px);
+}
+
+
+/* solution_box Start */
+/* 성진엔테크만 solution_box 컬러 설정값 다름!!!!! */
+.solution_box {
+    padding: 0 60px;
+    background-color: #F9F9F9;
+}
+
+.solution_box .solution {
+    padding: 120px 0;
+}
+
+.solution_box .solution:not(:first-child) {
+    border-top: solid 1px var(--color-03);
+}
+
+.solution_box .sol {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* 솔루션 공통 텍스트 */
+.solution_box .detail_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-05);
+    margin-bottom: 40px;
+}
+
+.solution_box .detail_text p {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 54px;
+    color: var(--color-07);
+}
+
+.solution_box .detail_text p:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.solution_box .img_title {
+    color: var(--color-06);
+}
+
+/* solution 안에 있는 detail_text의 margin-bottom은 그때그때마다 다름 */
+
+/* 솔루션1 sol1 */
+.sol1 .detail_text {
+    margin-bottom: 100px;
+}
+
+.sol1 .imgbox_center {
+    display: flex;
+    gap: 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sol1 .imgbox_center img {
+    box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+/* 솔루션2 sol2 */
+.sol2 .detail_text {
+    margin-bottom: 100px;
+}
+
+.sol2 .cross_check {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.sol2 .cross_check .video_flex_box {
+    box-sizing: border-box;
+    display: flex;
+}
+
+.sol2 .cross_check .video_flex_box .video_box {
+    flex: 1 1;
+    text-align: center;
+    padding: 40px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.sol2 .cross_check video {
+    max-width: 100%;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.sol2 .cross_check .video_box.android {
+    background: #E6E6E7;
+}
+
+.sol2 .cross_check .video_box.ios {
+    background: #000;
+}
+
+.sol2 .cross_check .video_box.ios .img_title {
+    color: var(--color-03);
+}
+
+/* 영상 버튼 */
+.sol2 .view_android {
+    position: relative;
+}
+
+.sol2 .view_android .herappbtnad {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* 안 보일 땐 클릭 방지 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.sol2 .view_android:hover .herappbtnad {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sol2 .view_android.paused .herappbtnad {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sol2 .view_ios {
+    position: relative;
+}
+
+.sol2 .view_ios .herappbtnio {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* 안 보일 땐 클릭 방지 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.sol2 .view_ios:hover .herappbtnio {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sol2 .view_ios.paused .herappbtnio {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+
+/* 솔루션3 sol3 */
+.sol3 .subpage figure:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.sol3 .subpage img {
+    box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+
+
+/* 테블릿 */
+@media (max-width: 1240px) {
+
+    /* 공통요소 */
+    .main_visual {
+        position: relative;
+    }
+
+    /* 메인 비주얼 */
+    .main_visual .main_bg {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .main_visual .main_bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* 페이지 인포 */
+    .main_visual .page_info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 60px 60px 60px;
+    }
+
+    .main_visual .page_info .sub_info .info_box:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .main_visual .page_info .sub_info .info_box:last-child {
+        margin-bottom: 48px;
+        /* 제일 밑에 위치하는 info는 48px 그 위로는 32px */
+    }
+
+
+    .main_visual .page_info .sub_info .info_title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .main_visual .page_info .sub_info .info_des {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .main_visual .info_des>div:not(:last-child)::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 14px;
+        margin: auto 8px;
+    }
+
+    .main_visual .page_info .page_title {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .main_visual .page_info .page_title .making_date {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    /* 본문 시작 */
+}
+
+
+/* 모바일 */
+@media (max-width: 1024px) {
+
+    /* 공통요소 */
+    .img_title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .main_visual {
+        position: relative;
+    }
+
+    /* 메인 비주얼 */
+    .main_visual .main_bg {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .main_visual .backdrop {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .main_visual .main_bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* 페이지 인포 */
+    .main_visual .page_info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 20px 60px 20px;
+    }
+
+    .main_visual .page_info .sub_info .info_box:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .main_visual .page_info .sub_info .info_box:last-child {
+        margin-bottom: 48px;
+    }
+
+
+    .main_visual .page_info .sub_info .info_title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .main_visual .page_info .sub_info .info_des {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .main_visual .info_des>div:not(:last-child)::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 14px;
+        margin: auto 8px;
+    }
+
+    .main_visual .page_info .page_title {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .main_visual .page_info .page_title .making_date {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    /* 본문 텍스트 */
+    .text_box .detail_box {
+        padding: 0 20px;
+    }
+
+    .text_box .detail_box .detail_text p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 34px;
+    }
+
+    .text_box .detail_box .detail_text p:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    /* solution_box Start */
+    .solution_box {
+        padding: 0 20px;
+    }
+
+    .solution_box .detail_text p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 34px;
+    }
+
+
+
+    /* 헤라 전용 */
+    .sol1 .detail_text,
+    .sol2 .detail_text {
+        margin-bottom: 60px;
+    }
+
+
+}
