@@ -413,6 +413,7 @@
         color: var(--color-01);
         font-size: 18px;
         font-weight: 500;
+        line-height: 24px;
     }
 
     .main_visual .info_des>div:not(:last-child)::after {
